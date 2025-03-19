@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	background-color: black;
+	color: #fff;
+	font-size: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.reset{
+    display:grid;
+    position:absolute;
+	margin-top: 1%;
+	margin-left: 3.4%;
+}
+.star-rating {
+	white-space: nowrap;
+}
+.star-rating [type="radio"] {
+	appearance: none;
+}
+.star-rating i {
+	font-size: 1.2em;
+	transition: 0.3s;
+}
+
+.star-rating label:is(:hover, :has(~ :hover)) i {
+	color: #fffdba;
+}
+.star-rating label:has(~ :checked) i {
+	color: #faec1b;
+}
+
+
